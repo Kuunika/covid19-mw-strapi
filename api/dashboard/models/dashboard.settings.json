@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dashboards",
+  "info": {
+    "name": "Dashboard",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dashboard_name": {
+      "type": "string"
+    },
+    "dashboard_url": {
+      "type": "string"
+    },
+    "users": {
+      "via": "dashboards",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Tableau",
+        "Iframe"
+      ]
+    }
+  }
+}
