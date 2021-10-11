@@ -28,7 +28,9 @@
       "enum": [
         "Tableau",
         "Iframe"
-      ]
+      ],
+      "required": true,
+      "default": "Iframe"
     }
   }
 }
