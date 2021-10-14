@@ -7,7 +7,7 @@ RUN npm run build
 
 FROM node:14-alpine
 WORKDIR /usr/src/app
-COPY --from=building /usr/src/app/package*.json .
+COPY --from=building /usr/src/app/package*.json ./
 RUN npm install --only=prod
 COPY --from=building /usr/src/app/api/ api/
 COPY --from=building /usr/src/app/build/ build/
