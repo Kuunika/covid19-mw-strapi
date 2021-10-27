@@ -17,6 +17,7 @@
     "strapi": "3.6.8",
     "strapi-admin": "3.6.8",
     "strapi-connector-bookshelf": "3.6.8",
+    "strapi-connector-mongoose": "^3.6.8",
     "strapi-plugin-content-manager": "3.6.8",
     "strapi-plugin-content-type-builder": "3.6.8",
     "strapi-plugin-email": "3.6.8",
@@ -26,7 +27,7 @@
     "strapi-utils": "3.6.8"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Brett Onions"
   },
   "strapi": {
     "uuid": "b683f23c-44e5-456b-bc5b-033dedf0005f"
